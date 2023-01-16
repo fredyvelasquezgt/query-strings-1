@@ -32,7 +32,7 @@ def working_with_strings(name):
 # numbers
 @app.route('/numbers/<int:num>')
 def working_with_numbers(num):
-    return '<h1> the number you picked is: ' + str(num) + '</h1>' 
+    return '<h1> the number you picked is: ' + str(num) + '</h1>'  #tengo que parsearlo a str para que se despliegue correctamente
 
 
 # add numbers
