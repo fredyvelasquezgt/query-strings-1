@@ -46,6 +46,11 @@ def adding_integers(num1, num2):
 def product_two_numbers(num1, num2):
     return '<h1> the product is : {}'.format(num1 * num2) + '</h1>'
 
+# rendering templates
+@app.route('/temp')
+def using_templates():
+    return render_template('hello.html') #flask automaticamente busca el archivo html en los templates
+
 
 
 if __name__ == '__main__':
