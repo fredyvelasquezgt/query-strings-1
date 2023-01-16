@@ -52,6 +52,21 @@ def using_templates():
     return render_template('hello.html') #flask automaticamente busca el archivo html en los templates
 
 
+# JINJA TEMPLATES
+@app.route('/watch')
+def top_movies():
+    movie_list = ['autopsy of jane doe',
+                  'neon demon',
+                  'ghost in a shell',
+                  'kong: skull island',
+                  'john wick 2',
+                  'spiderman - homecoming']
+
+    return render_template('movies.html',
+                           movies=movie_list,
+                           name='Harry')#busca tambien el archivo movies.html en template
+
+
 
 if __name__ == '__main__':
     app.run()
