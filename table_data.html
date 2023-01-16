@@ -1,15 +1,19 @@
-<!-- HTML FOR JINJA2 - PART 2 -->
-<!-- USE WIHT THE PYTHON FILE PROVIDED -->
+<!-- HTML FOR SECTION 3: LECTURE 14 -->
+<!-- ADDED CSS USING UR_FOR METHOD TO THIS HTML FILE IN LINE 10 -->
+
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>movie durations</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
 
     <body>
         <h2>This Collection Belongs to {{ name }} </h2>
+        <!--the following url_for is ony for your understanding. dont include this in your projects-->
+        <h3> Path to the css file: {{ url_for('static', filename='css/styles.css') }} </h3>
 
         <table>
             <tr>
