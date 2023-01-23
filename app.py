@@ -19,6 +19,8 @@ def query_strings(greeting='hello'):
 
 
 
+
+
 #otra route pero sin usar los query strings, esto ya es con flask
 @app.route('/user')
 @app.route('/user/<name>')
