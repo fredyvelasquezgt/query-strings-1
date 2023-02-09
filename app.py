@@ -11,6 +11,7 @@ def hello_world():  # put application's code here
 
 
 
+
 #nueva route usando query strings
 @app.route('/new/')
 def query_strings(greeting='hello'):
